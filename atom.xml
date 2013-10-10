@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://no-z-turn.github.io/atom.xml" rel="self"/>
+  <link href="http://no-z-turn.github.io/"/>
+  <updated>2013-10-10T14:16:35-05:00</updated>
+  <id>http://no-z-turn.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Debugging In Vim]]></title>
+    <link href="http://no-z-turn.github.io/blog/2013/09/30/debugging-in-vim/"/>
+    <updated>2013-09-30T00:00:00-05:00</updated>
+    <id>http://no-z-turn.github.io/blog/2013/09/30/debugging-in-vim</id>
+    <content type="html"><![CDATA[<p>Check this blog entry <a href="https://zschoche.org/debugging-in-vim/">Debugging In Vim</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A full-screen, console-based Python debugger: pudb]]></title>
+    <link href="http://no-z-turn.github.io/blog/2013/09/30/a-full-screen-console-based-python-debugger-pudb/"/>
+    <updated>2013-09-30T00:00:00-05:00</updated>
+    <id>http://no-z-turn.github.io/blog/2013/09/30/a-full-screen-console-based-python-debugger-pudb</id>
+    <content type="html"><![CDATA[<p>Check it on Python website, <a href="https://pypi.python.org/pypi/pudb">pudb</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A convenient vim plugin for Jekyll]]></title>
+    <link href="http://no-z-turn.github.io/blog/2013/09/27/a-convenient-vim-plugin-for-jekyll/"/>
+    <updated>2013-09-27T00:00:00-05:00</updated>
+    <id>http://no-z-turn.github.io/blog/2013/09/27/a-convenient-vim-plugin-for-jekyll</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/csexton/jekyll.vim">jekyll.vim</a> is a convenient vim plugin for writing posts for a Jekyll powered blog in vim.</p>
+]]></content>
+  </entry>
+  
+</feed>

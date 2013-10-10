@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://no-z-turn.github.io/sitemap.xml 

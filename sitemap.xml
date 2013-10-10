@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://no-z-turn.github.io/blog/2013/09/27/a-convenient-vim-plugin-for-jekyll/</loc>
+        <lastmod>2013-10-10T14:14:11-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://no-z-turn.github.io/blog/2013/09/30/a-full-screen-console-based-python-debugger-pudb/
+        </loc>
+        <lastmod>2013-10-10T14:15:44-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://no-z-turn.github.io/blog/2013/09/30/debugging-in-vim/</loc>
+        <lastmod>2013-10-10T14:15:27-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://no-z-turn.github.io/blog/archives/</loc>
+        <lastmod>2013-10-10T14:15:44-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://no-z-turn.github.io/</loc>
+        <lastmod>2013-10-10T14:15:44-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://no-z-turn.github.io/robots.txt</loc>
+        <lastmod>2013-10-10T13:46:52-05:00</lastmod>
+    </url>
+</urlset>
