@@ -4,7 +4,7 @@
   <title><![CDATA[A Zigzag Life]]></title>
   <link href="http://no-z-turn.github.io/atom.xml" rel="self"/>
   <link href="http://no-z-turn.github.io/"/>
-  <updated>2013-10-14T14:15:48-05:00</updated>
+  <updated>2013-10-14T14:19:02-05:00</updated>
   <id>http://no-z-turn.github.io/</id>
   <author>
     <name><![CDATA[Zen Turn]]></name>
@@ -21,10 +21,11 @@
     <content type="html"><![CDATA[<p>I can not mount a EFI partition using <code>mount_hfs /dev/disk0s1 /tmp/disk</code> with
 errors below:</p>
 
-<p><code>
-12/14/11 11:49:00.000 PM kernel: hfs_mountfs: encountered failure 22
-12/14/11 11:49:00.000 PM kernel: hfs_mount: hfs_mountfs returned 22
-</code></p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>12/14/11 11:49:00.000 PM kernel: hfs_mountfs: encountered failure 22
+</span><span class='line'>12/14/11 11:49:00.000 PM kernel: hfs_mount: hfs_mountfs returned 22</span></code></pre></td></tr></table></div></figure>
+
 
 <p>Disk Utility can not access the EFI partition to check its health. I googled it,
 and find a solution: <a href="http://zzamboni.org/blog/fix-journal-in-an-hfs-file-system/">Fix Journal in an HFS+ File System</a>, but the solution does not work in my case. In fact, what you should do is running a <code>fsck_hfs /dev/disk0s1</code> on that partition first.</p>
