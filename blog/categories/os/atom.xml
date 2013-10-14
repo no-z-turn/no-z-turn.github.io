@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OS | A Zigzag Life]]></title>
   <link href="http://no-z-turn.github.io/blog/categories/os/atom.xml" rel="self"/>
   <link href="http://no-z-turn.github.io/"/>
-  <updated>2013-10-14T14:27:59-05:00</updated>
+  <updated>2013-10-14T14:28:57-05:00</updated>
   <id>http://no-z-turn.github.io/</id>
   <author>
     <name><![CDATA[Zen Turn]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<p>I can not mount a EFI partition using <code>mount_hfs /dev/disk0s1 /tmp/disk</code> with
 errors below:</p>
 
-<p><code>[log entries]
+<p><code>
 12/14/11 11:49:00.000 PM kernel: hfs_mountfs: encountered failure 22
 12/14/11 11:49:00.000 PM kernel: hfs_mount: hfs_mountfs returned 22
 </code></p>
