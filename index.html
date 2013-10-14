@@ -103,6 +103,61 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2013-10-14T00:00:00-05:00" pubdate data-updated="true">Oct 14<span>th</span>, 2013</time></h5>
+          <div class="row-fluid">
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          <a href="/blog/categories/OS/"><span class="badge">OS</span></a>
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2013/10/14/fix-a-mounting-issue-in-an-hfs-file-system/">fix a mounting issue in an HFS file system</a></h1>
+      <p>I can not mount a EFI partition using <code>mount_hfs /dev/disk0s1 /tmp/disk</code> with
+errors below:</p>
+
+<p><code>
+12/14/11 11:49:00.000 PM kernel: hfs_mountfs: encountered failure 22
+12/14/11 11:49:00.000 PM kernel: hfs_mount: hfs_mountfs returned 22
+</code></p>
+
+<p>Disk Utility can not access the EFI partition to check its health. I googled it,
+and find a solution: <a href="http://zzamboni.org/blog/fix-journal-in-an-hfs-file-system/">Fix Journal in an HFS+ File System</a>, but the solution does not work in my case. In fact, what you should do is running a <code>fsck_hfs /dev/disk0s1</code> on that partition first.</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2013-10-11T00:00:00-05:00" pubdate data-updated="true">Oct 11<span>th</span>, 2013</time></h5>
           <div class="row-fluid">
           

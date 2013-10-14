@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>an animation of min-heap - A Zigzag Life</title>
+  <title>fix a mounting issue in an HFS file system - A Zigzag Life</title>
   <meta name="author" content="Zen Turn">
 
    
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://no-z-turn.github.io/blog/2013/10/11/an-animation-of-min-heap">
+  <link rel="canonical" href="http://no-z-turn.github.io/blog/2013/10/14/fix-a-mounting-issue-in-an-hfs-file-system">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -80,7 +80,7 @@
 
   <header>
   <div class="jumbotron">
-    An Animation of Min-heap
+    Fix a Mounting Issue in an HFS File System
 	<h5>
 
 
@@ -93,12 +93,21 @@
   
 
 
-<i class="icon-calendar-empty"></i> <time datetime="2013-10-11T00:00:00-05:00" pubdate data-updated="true">Oct 11<span>th</span>, 2013</time></h5>
+<i class="icon-calendar-empty"></i> <time datetime="2013-10-14T00:00:00-05:00" pubdate data-updated="true">Oct 14<span>th</span>, 2013</time></h5>
   </div>
 </header>
   <div class="row-fluid">
     <div class="span12">
-      <p>Read this post <a href="http://www.benfrederickson.com/2013/10/10/heap-visualization.html">Visualizing min-heap algorithms with D3.js</a>.</p>
+      <p>I can not mount a EFI partition using <code>mount_hfs /dev/disk0s1 /tmp/disk</code> with
+errors below:</p>
+
+<p><code>
+12/14/11 11:49:00.000 PM kernel: hfs_mountfs: encountered failure 22
+12/14/11 11:49:00.000 PM kernel: hfs_mount: hfs_mountfs returned 22
+</code></p>
+
+<p>Disk Utility can not access the EFI partition to check its health. I googled it,
+and find a solution: <a href="http://zzamboni.org/blog/fix-journal-in-an-hfs-file-system/">Fix Journal in an HFS+ File System</a>, but the solution does not work in my case. In fact, what you should do is running a <code>fsck_hfs /dev/disk0s1</code> on that partition first.</p>
 
     </div>
   </div>
@@ -117,7 +126,7 @@
 
 
 
-  <a href="/blog/categories/links/"><span class="badge">links</span></a>
+  <a href="/blog/categories/OS/"><span class="badge">OS</span></a>
 
 
 
@@ -145,10 +154,8 @@
       <div class="span12">
         <p class="meta">
           
-            <a class="basic-alignment left" href="/blog/2013/09/30/debugging-in-vim/" title="Previous Post: Debugging In Vim">&laquo; Debugging In Vim</a>
+            <a class="basic-alignment left" href="/blog/2013/10/11/an-animation-of-min-heap/" title="Previous Post: an animation of min-heap">&laquo; an animation of min-heap</a>
           
-          
-            <a class="basic-alignment right" href="/blog/2013/10/14/fix-a-mounting-issue-in-an-hfs-file-system/" title="Next Post: fix a mounting issue in an HFS file system">fix a mounting issue in an HFS file system &raquo;</a>
           
         </p>
       </div>
@@ -187,8 +194,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://no-z-turn.github.io/blog/2013/10/11/an-animation-of-min-heap/';
-        var disqus_url = 'http://no-z-turn.github.io/blog/2013/10/11/an-animation-of-min-heap/';
+        var disqus_identifier = 'http://no-z-turn.github.io/blog/2013/10/14/fix-a-mounting-issue-in-an-hfs-file-system/';
+        var disqus_url = 'http://no-z-turn.github.io/blog/2013/10/14/fix-a-mounting-issue-in-an-hfs-file-system/';
         var disqus_script = 'embed.js';
       
     (function () {
