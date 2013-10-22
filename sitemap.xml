@@ -22,15 +22,21 @@
         <loc>
             http://no-z-turn.github.io/blog/2013/10/14/fix-a-mounting-issue-in-an-hfs-file-system/
         </loc>
-        <lastmod>2013-10-14T14:28:32-05:00</lastmod>
+        <lastmod>2013-10-14T14:34:58-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://no-z-turn.github.io/blog/2013/10/22/speed-and-allocated-file-size-change-using-rsync/
+        </loc>
+        <lastmod>2013-10-22T09:39:06-05:00</lastmod>
     </url>
     <url>
         <loc>http://no-z-turn.github.io/blog/archives/</loc>
-        <lastmod>2013-10-14T14:28:32-05:00</lastmod>
+        <lastmod>2013-10-22T09:39:06-05:00</lastmod>
     </url>
     <url>
         <loc>http://no-z-turn.github.io/</loc>
-        <lastmod>2013-10-14T14:28:32-05:00</lastmod>
+        <lastmod>2013-10-22T09:39:06-05:00</lastmod>
     </url>
     <url>
         <loc>http://no-z-turn.github.io/robots.txt</loc>

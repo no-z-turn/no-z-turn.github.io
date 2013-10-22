@@ -4,7 +4,7 @@
   <title><![CDATA[A Zigzag Life]]></title>
   <link href="http://no-z-turn.github.io/atom.xml" rel="self"/>
   <link href="http://no-z-turn.github.io/"/>
-  <updated>2013-10-14T14:29:06-05:00</updated>
+  <updated>2013-10-22T09:43:17-05:00</updated>
   <id>http://no-z-turn.github.io/</id>
   <author>
     <name><![CDATA[Zen Turn]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[speed and allocated file size change using rsync]]></title>
+    <link href="http://no-z-turn.github.io/blog/2013/10/22/speed-and-allocated-file-size-change-using-rsync/"/>
+    <updated>2013-10-22T00:00:00-05:00</updated>
+    <id>http://no-z-turn.github.io/blog/2013/10/22/speed-and-allocated-file-size-change-using-rsync</id>
+    <content type="html"><![CDATA[<p>The command rsync is a convenient tool to mirror/backup your files and
+directories. For example,</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rysnc -az from dest
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>However, rsync hangs for a while in the beginning because rysnc
+uses delta-transfer algorithm. To speed up, it is wise to use <code>-W</code> option  to
+disable the rsync&rsquo;s delta-transfer algorithm if you are mirroring directories or files.</p>
+
+<p>After you rsync a directory, you may use <code>du -sh</code> to check the size of that
+directory. You may surprise there may be a size difference between the original
+directory and the destination directory. This is due to the concept of <a href="http://en.wikipedia.org/wiki/Sparse_file"><em>spare
+file</em></a>. The option <code>-S</code> will handle
+sparse files efficiently.</p>
+
+<p>By the way, you shoud update rsync if you use Mac OS X. The out-of-box rsync is
+out-of-date, which version is 2.6.9. The current version is 3.x, find the new
+enhancements of the newest version rysnc using <code>man rsync</code>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[fix a mounting issue in an HFS file system]]></title>

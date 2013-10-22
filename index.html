@@ -103,6 +103,74 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2013-10-22T00:00:00-05:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2013</time></h5>
+          <div class="row-fluid">
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          <a href="/blog/categories/Linux,/"><span class="badge">Linux,</span></a>
+          
+          <a href="/blog/categories/Tools/"><span class="badge">Tools</span></a>
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2013/10/22/speed-and-allocated-file-size-change-using-rsync/">speed and allocated file size change using rsync</a></h1>
+      <p>The command rsync is a convenient tool to mirror/backup your files and
+directories. For example,</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rysnc -az from dest
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>However, rsync hangs for a while in the beginning because rysnc
+uses delta-transfer algorithm. To speed up, it is wise to use <code>-W</code> option  to
+disable the rsync&rsquo;s delta-transfer algorithm if you are mirroring directories or files.</p>
+
+<p>After you rsync a directory, you may use <code>du -sh</code> to check the size of that
+directory. You may surprise there may be a size difference between the original
+directory and the destination directory. This is due to the concept of <a href="http://en.wikipedia.org/wiki/Sparse_file"><em>spare
+file</em></a>. The option <code>-S</code> will handle
+sparse files efficiently.</p>
+
+<p>By the way, you shoud update rsync if you use Mac OS X. The out-of-box rsync is
+out-of-date, which version is 2.6.9. The current version is 3.x, find the new
+enhancements of the newest version rysnc using <code>man rsync</code>.</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2013-10-14T00:00:00-05:00" pubdate data-updated="true">Oct 14<span>th</span>, 2013</time></h5>
           <div class="row-fluid">
           
